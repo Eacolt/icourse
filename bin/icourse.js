@@ -9,7 +9,7 @@ const ora = require('ora');
 const chalk = require('chalk');
 const fs = require('fs');
 const symbols = require('log-symbols');
-program.version('1.0.5', '-v, --version')
+program.version('1.0.6', '-v, --version')
     .command('init <name>')
     .action((name) => {
  

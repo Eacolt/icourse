@@ -1,6 +1,6 @@
 {
-  "name": "icourse1.05",
-  "version": "1.0.5",
+  "name": "icourse1.06",
+  "version": "1.0.6",
   "description": "web富应用程序",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -8,8 +8,16 @@
   "bin": {
     "icourse": "bin/icourse"
   },
+  "url": "https://gitee.com/dreamcolt/icourse.git",
+  "email":"ay12580233@gmail.com",
+
   "author": "刘昭廷",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/dreamcolt/icourse.git"
+  },
+
   "devDependencies": {
     "chalk": "^2.4.2",
     "commander": "^2.19.0",
