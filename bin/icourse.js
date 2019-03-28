@@ -1,5 +1,5 @@
-// 指定脚本的执行程序
-!/usr/bin/node
+#!/usr/bin/env node --harmony
+process.env.NODE_PATH = __dirname + '/../node_modules/'
 const program = require('commander');
 const download = require('download-git-repo');
 const inqurirer = require('inquirer');
@@ -9,13 +9,10 @@ const ora = require('ora');
 const chalk = require('chalk');
 const fs = require('fs');
 const symbols = require('log-symbols');
-program.version('1.0.0', '-v, --version')
+program.version('1.0.5', '-v, --version')
     .command('init <name>')
     .action((name) => {
-     //   https://github.com/bear-new/latest-webpack-cli
-        //download('https://github.com:Eacolt/pixi-template#master',name,{clone:true}, (err)=>{
-        //     console.log(err)
-        // })
+ 
         const fileName = `${name}/package.json`;
         inqurirer.prompt([
             {
