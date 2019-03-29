@@ -1,21 +1,21 @@
 {
-  "name": "icourse1.06",
-  "version": "1.0.6",
-  "description": "web富应用程序",
+  "name": "icourse-cli",
+  "version": "1.0.9",
+  "description": "基于vue.js,pixi.js的WebApp自动化构建工具",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
     "icourse": "bin/icourse"
   },
-  "url": "https://gitee.com/dreamcolt/icourse.git",
+  "url": "https://github.com/Eacolt/icourse.git",
   "email":"ay12580233@gmail.com",
 
   "author": "刘昭廷",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/dreamcolt/icourse.git"
+    "url": "https://github.com/Eacolt/icourse.git"
   },
 
   "devDependencies": {

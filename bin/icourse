@@ -1,5 +1,5 @@
-#!/usr/bin/env node --harmony
-process.env.NODE_PATH = __dirname + '/../node_modules/'
+#!/usr/bin/env node
+
 const program = require('commander');
 const download = require('download-git-repo');
 const inqurirer = require('inquirer');
@@ -9,7 +9,7 @@ const ora = require('ora');
 const chalk = require('chalk');
 const fs = require('fs');
 const symbols = require('log-symbols');
-program.version('1.0.6', '-v, --version')
+program.version('1.0.9', '-v, --version')
     .command('init <name>')
     .action((name) => {
  
