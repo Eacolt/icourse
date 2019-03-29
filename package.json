@@ -1,15 +1,16 @@
 {
   "name": "icourse-cli",
-  "version": "1.0.9",
+  "version": "1.1.2",
+  "bin": {
+    "icourse": "bin/icourse"
+  },
   "description": "基于vue.js,pixi.js的WebApp自动化构建工具",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "bin": {
-    "icourse": "bin/icourse"
-  },
+
   "url": "https://github.com/Eacolt/icourse.git",
-  "email":"ay12580233@gmail.com",
+  "email":"parapen@163.com",
 
   "author": "刘昭廷",
   "license": "ISC",
@@ -17,8 +18,7 @@
     "type": "git",
     "url": "https://github.com/Eacolt/icourse.git"
   },
-
-  "devDependencies": {
+  "dependencies":{
     "chalk": "^2.4.2",
     "commander": "^2.19.0",
     "download-git-repo": "^1.1.0",
@@ -27,4 +27,6 @@
     "log-symbols": "^2.2.0",
     "ora": "^3.2.0"
   }
+
+
 }
