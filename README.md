@@ -17,3 +17,7 @@ icourse-cli, 一个基于vue.js和pixi.js的Cli;
 1. 增加一些loader插件
 2. 更新了模板
 
+###########Author
+ 刘昭廷(dreamcolt)
+https://github.com/Eacolt
+
