@@ -11,7 +11,7 @@ const fs = require('fs');
 const symbols = require('log-symbols');
 
  
-program.version('1.1.9', '-v, --version')
+program.version('1.2.0', '-v, --version')
     .command('init <name>')
     .action((name) => {
         const fileName = `${name}/package.json`;
