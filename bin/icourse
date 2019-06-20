@@ -11,7 +11,7 @@ const fs = require('fs');
 const symbols = require('log-symbols');
 
  
-program.version('1.1.8', '-v, --version')
+program.version('1.1.9', '-v, --version')
     .command('init <name>')
     .action((name) => {
         const fileName = `${name}/package.json`;
@@ -23,6 +23,8 @@ program.version('1.1.8', '-v, --version')
                 choices: [
                     "vue",
                     "react",
+                    "vue+ts",
+                    "react+ts"
                 ]
             },
             {
@@ -44,7 +46,25 @@ program.version('1.1.8', '-v, --version')
                 return;
             }
            
-            const mygit = answers.templatetype==='vue' ? 'https://github.com:Eacolt/vue-base-template#master':'https://github.com:Eacolt/react-base-template#master';
+            const mygit;// = answers.templatetype==='vue' ? 'https://github.com:Eacolt/vue-base-template#master':'https://github.com:Eacolt/react-base-template#master';
+            switch(answers.templatetype){
+                case 'vue':
+                    mygit = 'https://github.com:Eacolt/vue-base-template#master';
+                    break;
+                case 'react':
+                    mygit = 'https://github.com:Eacolt/react-base-template#master';
+                    break;
+                case 'vue+ts':
+                    mygit = 'https://github.com:Eacolt/vue-ts-basetemplate#master'
+                    break;
+                case 'vue+ts':
+                    mygit = 'https://github.com:Eacolt/react-ts-basetemplate#master'
+                    break;
+                default:
+                    break;
+
+            }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
             const spinner = ora('正在下载应用模板');
             spinner.start();
             download(mygit,name,{clone:true},(err)=>{
